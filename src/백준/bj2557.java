@@ -1,4 +1,4 @@
-package study;
+package 백준;
 
 public class bj2557 {
 
