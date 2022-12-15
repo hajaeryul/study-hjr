@@ -1,8 +1,8 @@
-package 백준;
+package 백준.입출력과사칙연산;
 
 import java.util.Scanner;
 
-public class bj1000 {
+public class bj10869 {
 
 	public static void main(String[] args) {
 
@@ -12,6 +12,11 @@ public class bj1000 {
 		int B = in.nextInt();
 		
 		System.out.println(A+B);
+		System.out.println(A-B);
+		System.out.println(A*B);
+		System.out.println(A/B);
+		System.out.println(A%B);
+
 
 	}
 

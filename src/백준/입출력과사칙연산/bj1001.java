@@ -1,4 +1,4 @@
-package 백준;
+package 백준.입출력과사칙연산;
 
 import java.util.Scanner;
 
