@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class bj11021 {
+public class bj11022 {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -18,11 +18,18 @@ public class bj11021 {
 		
 		StringTokenizer st;
 		
+		int A;
+		int B;
+		
 		for(int i = 1; i <= Num; i++) {
 			st = new StringTokenizer(br.readLine()," ");
 			
+			A = Integer.parseInt(st.nextToken());
+			B = Integer.parseInt(st.nextToken());
+			
 			bw.write("Case #" + i +": ");
-			bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())) + "\n");
+			bw.write(A + " + " + B + " = ");
+			bw.write((A + B) + "\n");
 		}
 		
 		br.close();
