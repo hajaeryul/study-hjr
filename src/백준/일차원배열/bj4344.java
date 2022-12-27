@@ -40,7 +40,7 @@ public class bj4344 {
 				}
 			}
 			
-			System.out.println(count);
+			System.out.printf("%.3f%%\n",(count/N)*100);
 			
 		}
 
