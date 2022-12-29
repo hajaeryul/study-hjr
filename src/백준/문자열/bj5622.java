@@ -27,9 +27,9 @@ public class bj5622 {
 				count += 6;
 			}else if(s.charAt(i) < 80) { //MNO
 				count += 7;
-			}else if(s.charAt(i) < 83) { //PQRS
+			}else if(s.charAt(i) < 84) { //PQRS
 				count += 8;
-			}else if(s.charAt(i) < 86) { //TUV
+			}else if(s.charAt(i) < 87) { //TUV
 				count += 9;
 			}else { // WXYZ
 				count += 10;
