@@ -18,14 +18,15 @@ public class bj1193 {
 		// 홀수는 반대..
 		// 범위의 몇번째 값인지 구해야함
 		
-		int range = 0;
-		int count = 1; //범위의 몇번째 수인지
+		int range = 1;
+		int count = 0; //범위의 몇번째 수인지
 		
-		while(range < X) { // X가 범위 벗어나면 종료
-			count ++;
-			if(X == count) {
+		for(int i = 0; i < X; i++) {
+			if(count >= range) {
 				range = range + 1;
 				count = 1;
+			}else {
+				count++;
 			}
 		}
 		if(range % 2 == 0) {
