@@ -14,8 +14,6 @@ public class bj10250 {
 		StringTokenizer st;
 		
 		int testcase = Integer.parseInt(br.readLine());
-		int countH = 0; // 세로 카운트
-		int countW = 0; //가로 카운트
 		
 		for(int i = 0; i < testcase; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
@@ -24,18 +22,19 @@ public class bj10250 {
 			int W = Integer.parseInt(st.nextToken()); // 가로
 			int N = Integer.parseInt(st.nextToken()); // N번째 손님
 			
-			for(int j = 0; j < N; j++) {
-				if(countW >= countH) {
-					countW += 1;
-					countH = 1;
-				}else {
-					countH++;
-				}
+			// (N % H) * 100 하면 층 수
+			// (N % H)가 0이면 H * 100이 층 수
+			
+			// (N / H) + 1 하면 엘리베이터부터 거리
+			// (N % H)가 0이면 (N / H)가 거리
+			
+			if((N % H) == 0) {
+				System.out.println((H * 100) + (N / H));
+			}else {
+				System.out.println(((N % H) * 100) + ((N / H) + 1));
 			}
 		}
 		
-		
-
 	}
 
 }
