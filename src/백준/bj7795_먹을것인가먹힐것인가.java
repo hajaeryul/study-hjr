@@ -30,7 +30,7 @@ public class bj7795_먹을것인가먹힐것인가 {
 			Arrays.sort(Barr);
 			
 			// 이진 탐색
-			int res = 0;
+			int res = 0; //결과값 저장
 			for(int i = 0; i < N; i++) {
 				int cnt = 0;
 				int start = 0;
