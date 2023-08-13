@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class bj2839 {
+public class bj2839_설탕배달 {
 
 	public static void main(String[] args) throws IOException {
 
