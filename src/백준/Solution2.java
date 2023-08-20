@@ -1,6 +1,8 @@
 package 백준;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Solution2 {
@@ -27,6 +29,8 @@ public class Solution2 {
 				for(int i = N - 1; i >= 0; i--) {
 					sortArr[--cnt[arr[i]]] = arr[i];
 				}
+				List<Integer> list = new ArrayList<>();
+				list.add(3);
 				
 				System.out.println(Arrays.toString(sortArr));
 				
