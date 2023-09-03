@@ -26,7 +26,7 @@ public class SWEA_1961_숫자배열회전 {
                     System.out.print(arr[i][j]);
                 }
                 System.out.print(" ");
-                 
+                
                 for(int i = (N - 1); i >= 0; i--) {
                     System.out.print(arr[k][i]);
                 }
@@ -38,7 +38,5 @@ public class SWEA_1961_숫자배열회전 {
                 System.out.println();
             }
         }//T
-         
-         
     }//main
 }

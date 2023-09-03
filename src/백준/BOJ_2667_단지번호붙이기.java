@@ -30,7 +30,7 @@ public class BOJ_2667_단지번호붙이기 {
 		N = Integer.parseInt(br.readLine());
 		map = new int[N][N];
 		visited = new boolean[N][N];
-		apts = new int[N*N]; // 아파트 단지는 최대 N개 있을 수 있어
+		apts = new int[N*N]; // 아파트 단지는 최대 N*N개 있을 수 있어
 		apt = 0;
 		for(int i = 0; i < N; i++) {
 			String str = br.readLine();
@@ -74,6 +74,5 @@ public class BOJ_2667_단지번호붙이기 {
 				}
 			}
 		}
-		
 	}
 }
