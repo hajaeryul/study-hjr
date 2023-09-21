@@ -3,7 +3,7 @@ package 백준;
 
 import java.util.Scanner;
 
-public class BOJ_01000 {
+public class BOJ_1001 {
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class BOJ_01000 {
 		int A = in.nextInt();
 		int B = in.nextInt();
 		
-		System.out.println(A+B);
+		System.out.println(A-B);
 
 	}
 
