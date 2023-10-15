@@ -62,8 +62,8 @@ public class BOJ_1238_파티 {
 			list2[B].add(new Node(A, T));
 		}
 		
-		dijkstra(list1, dist1, 1);
-		dijkstra(list2, dist2, 1);
+		dijkstra(list1, dist1, C);
+		dijkstra(list2, dist2, C);
 		
 //		System.out.println(Arrays.toString(dist1));
 //		System.out.println(Arrays.toString(dist2));
