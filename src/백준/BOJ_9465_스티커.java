@@ -29,6 +29,12 @@ public class BOJ_9465_스티커 {
 					else dp[i][j] = dp[0][j-1] + arr[i][j-1] > dp[i][j-1] ? dp[0][j-1] + arr[i][j-1] : dp[i][j-1];
 				}
 			}
+			for(int i = 0; i < 2; i++) {
+				for(int j = 0; j <= N; j++) {
+					System.out.print(dp[i][j] + " ");
+				}
+				System.out.println();
+			}
 			int res = dp[0][N] > dp[1][N] ? dp[0][N] : dp[1][N];
 			System.out.println(res);
 		}
