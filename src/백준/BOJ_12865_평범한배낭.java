@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
+// DP(Bottom-Up) 방식을 사용
 public class BOJ_12865_평범한배낭 {
 	
 	public static void main(String[] args) throws IOException {
