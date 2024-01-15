@@ -3,6 +3,7 @@ package 백준;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class BOJ_9251_LCS {
 	
@@ -27,6 +28,12 @@ public class BOJ_9251_LCS {
 					dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
 				}
 			}
+		}
+		for(int i = 0; i < str1.length+1; i++) {
+			for(int j = 0; j < str2.length+1; j++) {
+				System.out.print(dp[i][j] + " ");
+			}
+			System.out.println();
 		}
 		System.out.println(dp[str1.length][str2.length]);
 
