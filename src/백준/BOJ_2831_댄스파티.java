@@ -59,7 +59,8 @@ public class BOJ_2831_댄스파티 {
 		}
 		
 		System.out.println(res);
-		
+	}
+}
 		
 		// 우선순위 큐로 풀어보려 했지만 실패
 //		PriorityQueue<Integer> mp = new PriorityQueue<>();
@@ -87,5 +88,4 @@ public class BOJ_2831_댄스파티 {
 //		
 //		System.out.println(res);
 		
-	}
-}
+
