@@ -18,18 +18,26 @@ public class BOJ_1863_스카이라인쉬운거 {
 			st.nextToken();
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
-		
-		int res = 1;
+
+		int cnt = 0;
 		Stack<Integer> s = new Stack<>();
-		for(int i = 1; i < n; i++) {
-			if(arr[i-1] < arr[i]) {
-				s.add(arr[i-1]);
-				res++;
-			} else if(arr[i] == s.peek()) {
-				continue;
+		for(int i = 0; i < n; i++) {
+			if(arr[i] == 0) {
+				while(!s.isEmpty()) {
+					s.pop();
+					cnt++;
+				}
+			} else {
+				while(!s.isEmpty() && s.peek() > arr[i]) {
+					s.pop();
+					cnt++;
+				}
+				if(s.isEmpty() || s.peek() < arr[i]) s.add(arr[i]);
+				
 			}
-			
 		}
-		System.out.println(res);
+		
+		cnt += s.size();
+		System.out.println(cnt);
 	}
 }

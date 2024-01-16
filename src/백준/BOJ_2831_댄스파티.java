@@ -43,18 +43,16 @@ public class BOJ_2831_댄스파티 {
 		int i = 0, j = 0;
 		
 		while(i < mp.size() && j < wm.size()) {
-			if(mp.get(i) < wm.get(j)) {
+			if(mp.get(i) > wm.get(j)) {
+				i++; j++;
 				res++;
-				i++;
-				j++;
-			}else i++;
+			}else j++;
 		}
 		i = 0; j = 0;
 		while(i < wp.size() && j < mm.size()) {
-			if(wp.get(i) < mm.get(j)) {
+			if(wp.get(i) > mm.get(j)) {
+				i++; j++;
 				res++;
-				i++;
-				j++;
 			}else i++;
 		}
 		
