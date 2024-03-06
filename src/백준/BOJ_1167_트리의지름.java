@@ -20,7 +20,7 @@ public class BOJ_1167_트리의지름 {
 	
 	static ArrayList<Node>[] adj;
 	static boolean[] chk;
-	static int max;
+	static int max, tmp;
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -44,12 +44,18 @@ public class BOJ_1167_트리의지름 {
 		chk = new boolean[V+1];
 		dfs(1, 0);
 		
+		chk = new boolean[V+1];
+		dfs(tmp, 0);
+		
 		System.out.println(max);
 	}
 	
 	static void dfs(int x, int d) {
 		chk[x] = true;
-		max = d > max ? d : max;
+		if(d > max) {
+			max = d;
+			tmp = x;
+		}
 		
 		for(int i = 0; i < adj[x].size(); i++) {
 			Node n = adj[x].get(i);
