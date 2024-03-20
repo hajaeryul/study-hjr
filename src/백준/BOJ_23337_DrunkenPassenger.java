@@ -9,14 +9,7 @@ public class BOJ_23337_DrunkenPassenger {
 	    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    	int n = Integer.parseInt(br.readLine());
 	    	
-	    	if(n==1) System.out.println(0);
-	    	if(n==2) System.out.println(1);
-	    	if(n > 2) {
-	    		double tmp = 0;
-	    		for(int i = 3; i <= n; i++) tmp += ((1.0 / (n+1)));
-	    		
-	    		System.out.println(tmp);
-	    	}
+	    	System.out.println(1.0/(n-1)+(double)(n-2)/(n-1)/2);
 	    	
 	    }
 
